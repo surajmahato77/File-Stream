@@ -28,7 +28,7 @@ class Var(object):
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'zxDeveloper'))
     if 'DYNO' in environ:
-        ON_HEROKU = True
+        ON_HEROKU = False
         APP_NAME = str(getenv('APP_NAME')) #dont need to fill anything here
     
     else:
